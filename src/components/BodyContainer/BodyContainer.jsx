@@ -1,6 +1,6 @@
 import "./BodyContainer.css";
 
-function BodyContainer({children}) {
+function BodyContainer({ children }) {
   return <div className="body-container">{children}</div>;
 }
 

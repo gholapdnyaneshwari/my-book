@@ -1,7 +1,8 @@
 import "./Navbar.css";
-import { Link } from "react-router";
-import { House, FileUser, PhoneCall, HeartHandshake, Icon } from "lucide-react";
-const NavConng = [
+import { Link } from "react-router-dom"; // ✅ FIXED
+import { House, FileUser, PhoneCall, HeartHandshake } from "lucide-react";
+
+const NavConfig = [ // ✅ FIXED NAME
   {
     name: "home",
     icon: <House className="menu-icon" />,
@@ -10,7 +11,7 @@ const NavConng = [
   },
   {
     name: "about",
-    icon: <fileUser className="menu-icon" />,
+    icon: <FileUser className="menu-icon" />, // ✅ FIXED
     title: "About",
     path: "/about",
   },
@@ -24,22 +25,27 @@ const NavConng = [
     name: "ourservices",
     icon: <HeartHandshake className="menu-icon" />,
     title: "OurServices",
-    path: "/ourservices",
+    path: "/ourservice", 
   },
 ];
+
 function Navbar({ active }) {
   return (
     <div className="navbar">
-      {NavConfig.map((menuItem) => {
-        return (
-          <Link to={menuItem.path} 
-          className={`menu-item ${active == menuItem.name ? "active-menu" : ""}`}>
-            {menuItem.icon}
-            {menuItem.title}
-          </Link>
-        );
-      })}
-      </div>
+      {NavConfig.map((menuItem) => (
+        <Link
+          key={menuItem.name}
+          to={menuItem.path}
+          className={`menu-item ${
+            active === menuItem.name ? "active-menu" : ""
+          }`}
+        >
+          {menuItem.icon}
+          {menuItem.title}
+        </Link>
+      ))}
+    </div>
   );
 }
+
 export default Navbar;

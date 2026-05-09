@@ -1,0 +1,22 @@
+.service-card{
+width: 200px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: #FFF;
+padding: 10px;
+border-radius: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.service-card-title{
+    margin: 0;
+}
+.service-card-description{
+    text-align: justify;
+}
+.services-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

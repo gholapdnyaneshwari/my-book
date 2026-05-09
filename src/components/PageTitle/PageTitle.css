@@ -1,0 +1,12 @@
+.page-title{
+    font-size: 36px;
+    margin-left: 40px;
+    border-left: 4px solid #ffa31a;
+    padding-left: 20px ;
+}
+.page-title-subtitle{
+    font-size: 18px;
+    margin-top: 4px;
+    font-style: italic;
+    color: #555;
+}

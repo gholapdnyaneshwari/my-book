@@ -3,6 +3,7 @@ import Img2 from "./assets/ice-cream-2.png";
 import Img3 from "./assets/ice-cream-3.png";
 import Img4 from "./assets/ice-cream-4.png";
 import Img5 from "./assets/ice-cream-5.png";
+import {UtensilsCrossed,Cuboid,Truck,ChefHat } from "lucide-react";
 const PRODUCTS = [
   {
     id: 1,
@@ -40,4 +41,34 @@ const PRODUCTS = [
     image: Img5,
   },
 ];
-export {PRODUCTS};
+const OUR_SERVICES =[
+  {
+    id: 1,
+    title: "Dine-in",
+    description:"A delightful frozen treat that melts in your mouth, ice cream is a perfect blend of rich cream, sweetness, and flavor. Every scoop brings a refreshing burst of joy, making it a favorite dessert for all ages.",
+    icon: <UtensilsCrossed height={"70px"}  width={"70px"}/>
+  
+  },
+   {
+    id: 2,
+    title: "Takeaway",
+    description:"A delightful frozen treat that melts in your mouth, ice cream is a perfect blend of rich cream, sweetness, and flavor. Every scoop brings a refreshing burst of joy, making it a favorite dessert for all ages.",
+    icon: <Cuboid height={"70px"}  width={"70px"}/>
+  
+  },
+   {
+    id: 3,
+    title: "Delivery",
+    description:"A delightful frozen treat that melts in your mouth, ice cream is a perfect blend of rich cream, sweetness, and flavor. Every scoop brings a refreshing burst of joy, making it a favorite dessert for all ages.",
+    icon: <Truck  height={"70px"}  width={"70px"}/>
+  
+  },
+   {
+    id: 4,
+    title: "Catering",
+    description:"A delightful frozen treat that melts in your mouth, ice cream is a perfect blend of rich cream, sweetness, and flavor. Every scoop brings a refreshing burst of joy, making it a favorite dessert for all ages.",
+    icon: <ChefHat height={"70px"}  width={"70px"}/>
+  
+  }
+];
+export {PRODUCTS,  OUR_SERVICES};
